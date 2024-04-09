@@ -13,21 +13,23 @@ As of March 2020, Data Services workshops are being held virtually on Zoom. [See
 
 
 ## Pre-Class Instructions
-Before the class, follow the [installation instructions to download all required software and tools for this workshop](link-to-github-installation-repo).
+Before the class, make sure you have a recent version of R and RStudio installed: https://posit.co/download/rstudio-desktop/ 
+
+Please also install the `tidyverse` package with the R command `install.packages("tidyverse")` or using the package manager.
 
 
 ## Description of Files
-- Data: This folder contains raw data files to be used during hands-on activities in the workshop
 - In-ClassScripts: This folder contains code files you will need for the workshop:
-    - [file1]
-    - [file2]
-    - [file3]
+    - class_script.R: this file contains the script we wrote together during the workshop
 - PresentationMaterials: This folder contains PowerPoint slides and other presentation materials used in the workshop
-- Resources: This folder contains cheatsheets to assist you during the workshop and links to external sources for you to continue your learning
+	- Manipulating and Joining Data in R with dplyr.html: These are the slides, which can be viewed in the browser (recommended)
+	- Manipulating and Joining Data in R with dplyr.pdf: If you can't view the browser version. this is a PDF copy of the slides.
+	- Quarto: this folder contains the Quarto documents needed to edit and generate the presentation
+- Resources: This folder contains cheatsheets to assist you during the workshop
 
 
 ## Post-Class Survey
-If you have taken the live webinar for this class, please take this survey: [link name](url)
+If you have taken the live webinar for this class, please take this survey: [Manipulating and Joining Data in R](https://www.surveymonkey.com/r/VJ8BVZF)
 
 
 ## License and Terms of Use
@@ -40,4 +42,4 @@ The images, external resources, and cheatsheets linked in this repository may ha
 
 ## Citation
 Please cite this material as:    
-Johns Hopkins University Data Services. [Date of workshop]. [Workshop title]. [URL] 
+Johns Hopkins University Data Services. April 11 2024. Manipulating and Joining Data in R with dplyr. https://github.com/jhu-data-services/.reshaping-joining-R-dplyr
