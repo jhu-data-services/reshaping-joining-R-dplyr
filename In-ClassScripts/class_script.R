@@ -100,5 +100,35 @@ inner_join(groundhog_predictions, groundhogs, join_by(groundhog_id == id))
 # add variables from groundhogs to groundhog_predictions. Add rows even if the groundhog isn't in groundhog_predictions
 full_join(groundhog_predictions, groundhogs, join_by(groundhog_id == id))
 
+# Bonus exercises
+# Write code to calculate the column predictions_count in groundhogs
+# Write code to calculate the column is_groundhog in groundhogs
+# Calculate the proportion of groundhogs from each country that make predictions each year
+# Add a column to groundhogs indicating the first year each groundhog saw its shadow
+
+#### BONUS EXERCISE ANSWERS ####
+
+# Write code to calculate the column predictions_count in groundhogs
+groundhogs |> left_join(predictions |>
+                          group_by(id) |>
+                          summarize(predictions_count = n()))
+
+# Write code to calculate the column is_groundhog in groundhogs
+groundhogs |>
+  mutate(is_groundhog = if_else(type =='Groundhog', TRUE, FALSE))
+
+# Calculate the proportion of groundhogs from each country that make predictions each year
+predictions |>
+  left_join(groundhogs) |>
+  group_by(year, country) |>
+  summarize(n = n()) |>
+  mutate(percent = n/sum(n))
+
+# Add a column to groundhogs indicating the first year each groundhog saw its shadow
+groundhogs |>
+  left_join(predictions |>
+              group_by(id) |>
+              filter(shadow == TRUE) |>
+              summarize(first_shadow = min(year)))
 
   
