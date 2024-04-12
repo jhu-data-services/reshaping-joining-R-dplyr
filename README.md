@@ -1,5 +1,5 @@
-# Workshop Name
-[description]
+# Manipulating and Joining Data in R with dplyr
+The dplyr package is a popular R package that people often use to manipulate and join datasets. You will need to have either some basic knowledge about using R or have previously attended our Introduction to R for Absolute Beginners workshop in order to take this one. Join JHU Data Services for this workshop and you will learn to use several functions, including mutate(), filter(), select(), summarize() and group_by(), in dplyr to manipulate data for the first half of the workshop. For the second part of this workshop, you will learn the join functions (e.g. left_join(), right_join(), inner_join(), semi_join(), anti_join(), full_join(), bind_rows() and bind_cols()) and set operations (e.g. union(), intersect() and setdiff()) in dplyr to combine two datasets. You will have plenty of opportunities to do hands-on activities on your laptop and work on datasets provided by instructors.
 
 
 ## JHU Data Services   
