@@ -29,7 +29,7 @@ Please also install the `tidyverse` package with the R command `install.packages
 
 
 ## Post-Class Survey
-If you have taken the live webinar for this class, please take this survey: [Manipulating and Joining Data in R](https://www.surveymonkey.com/r/VJ8BVZF)
+If you have taken the live webinar for this class, please take this survey: [Manipulating and Joining Data in R](https://bit.ly/dplyr-survey)
 
 
 ## License and Terms of Use
@@ -42,4 +42,4 @@ The images, external resources, and cheatsheets linked in this repository may ha
 
 ## Citation
 Please cite this material as:    
-Johns Hopkins University Data Services. April 11 2024. Manipulating and Joining Data in R with dplyr. https://github.com/jhu-data-services/.reshaping-joining-R-dplyr
+Johns Hopkins University Data Services. October 9 2024. Manipulating and Joining Data in R with dplyr. https://github.com/jhu-data-services/.reshaping-joining-R-dplyr

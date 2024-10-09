@@ -2,7 +2,7 @@
 title: "Manipulating and Joining Data in R with dplyr"
 author: Lubov McKone & Chen Chiu
 institute: Johns Hopkins Libraries Data Services
-date: April 11, 2024
+date: October 11, 2024
 format:
   revealjs: 
     theme: serif
@@ -211,7 +211,7 @@ predictions |>
 
 You can wrap the columns with `desc()` to sort in descending order
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ```{r}
 # sort our predictions by year
@@ -225,7 +225,7 @@ arrange(predictions, year)
 arrange(predictions, desc(year))
 ```
 :::
-:::
+:::::
 
 ## row verbs: `distinct()`
 
@@ -314,7 +314,7 @@ predictions |>
 -   You can use basically any function you can think of to summarize your dataset, i.e. mean()
 :::
 
-##  `summarize()` helper functions
+## `summarize()` helper functions
 
 -   Other powerful summary functions include:
 
@@ -538,7 +538,7 @@ left_join(groundhog_predictions, groundhogs, join_by(groundhog_id == id))
 
 `right_join()` keeps everything in the right dataframe and adds in data from the left
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ![](images/dplyr_left_join.png){fig-align="center"}
 :::
@@ -546,7 +546,7 @@ left_join(groundhog_predictions, groundhogs, join_by(groundhog_id == id))
 ::: {.column width="50%"}
 ![](images/dplyr_right_join.png){fig-align="center"}
 :::
-:::
+:::::
 
 ## more mutating joins
 
@@ -554,7 +554,7 @@ left_join(groundhog_predictions, groundhogs, join_by(groundhog_id == id))
 
 `full_join()` keeps all rows from both dataframes
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ![](images/dplyr_inner_join.png){fig-align="center"}
 :::
@@ -562,7 +562,7 @@ left_join(groundhog_predictions, groundhogs, join_by(groundhog_id == id))
 ::: {.column width="50%"}
 ![](images/dplyr_full_join.png){fig-align="center"}
 :::
-:::
+:::::
 
 ## filtering joins
 
@@ -572,7 +572,7 @@ filtering joins subset one dataframe based on matching characteristics with anot
 
 `anti_join(x, y)` returns all rows in x without a match in y
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ![](images/dplyr_semi_join.png){fig-align="center"}
 :::
@@ -580,7 +580,7 @@ filtering joins subset one dataframe based on matching characteristics with anot
 ::: {.column width="50%"}
 ![](images/dplyr_anti_join.png){fig-align="center"}
 :::
-:::
+:::::
 
 ## join exercises
 
@@ -644,7 +644,7 @@ predictions |>
 
 ## summary: verbs & helper functions
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Verbs:**
 
@@ -670,7 +670,7 @@ predictions |>
 
 -   `between()` and `within()`
 :::
-:::
+:::::
 
 ## resources
 
@@ -680,6 +680,12 @@ predictions |>
 
 ## thank you! 🙏
 
-other trainings
+Please take the post-workshop survey: <https://bit.ly/dplyr-survey>
 
-survey link
+**Future trainings:**
+
+-   Interactive Data Visualization in R with Shiny: 10/16 1-4pm; 10/17 1-4pm
+
+-   Creating Reproducible Documents with Quarto: 11/12 2-4pm
+
+-   Finding a Repository to Share Research Data: 12/3 12-1pm
